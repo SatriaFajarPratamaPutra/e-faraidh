@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        android:id="@+id/splash_scre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToOutline="true"
+        android:background="@drawable/bg"
+
+
+        >
+
+        <View
+            android:id="@+id/group_4"
+            android:layout_width="188.12dp"
+            android:layout_height="191.25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/e_faraidh"
+            android:layout_width="99dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="548dp"
+            android:text="@string/e_faraidh"
+            android:fontFamily="@font/sora"
+            android:textStyle="bold"
+            android:textAppearance="@style/e_faraidh"
+            android:lineSpacingExtra="-1sp"
+            android:gravity="top" />
+
+        <TextView
+            android:id="@+id/versi_2_0"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="175dp"
+            android:text="@string/versi_2_0"
+            android:fontFamily="@font/sora"
+            android:textStyle="bold"
+            android:textAppearance="@style/versi_2_0"
+            android:lineSpacingExtra="-1sp"
+            android:gravity="top" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

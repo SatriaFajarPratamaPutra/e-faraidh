@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8195F4"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/boarding1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="52dp"
+        tools:ignore="ContentDescription,MissingConstraints,VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/pusing_meng"
+        android:layout_width="257dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="top"
+        android:lineSpacingExtra="-1sp"
+        android:text="@string/pusing_meng"
+        android:textAppearance="@style/pusing_meng"
+        tools:ignore="MissingConstraints,TextContrastCheck,TextSizeCheck"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="562dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
