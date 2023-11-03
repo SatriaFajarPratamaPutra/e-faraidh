@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- Elemen utama: ConstraintLayout digunakan untuk manajemen tata letak yang fleksibel -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <!-- Tata letak splash screen -->
     <RelativeLayout
         android:id="@+id/splash_scre"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToOutline="true"
-        android:background="@drawable/bg"
+        android:background="@drawable/bg">
 
-
-        >
-
+        <!-- Logo aplikasi yang ditampilkan di tengah layar -->
         <View
             android:id="@+id/group_4"
             android:layout_width="188.12dp"
@@ -25,6 +25,7 @@
             android:layout_centerVertical="true"
             android:background="@drawable/logo"/>
 
+        <!-- Teks menampilkan 'e_faraidh' dengan gaya yang telah ditentukan -->
         <TextView
             android:id="@+id/e_faraidh"
             android:layout_width="99dp"
@@ -39,6 +40,7 @@
             android:lineSpacingExtra="-1sp"
             android:gravity="top" />
 
+        <!-- Teks menampilkan 'versi_2_0' dengan gaya yang telah ditentukan -->
         <TextView
             android:id="@+id/versi_2_0"
             android:layout_width="wrap_content"

@@ -1,6 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToOutline="true"
+        android:background="@drawable/bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="42dp"
+            android:paddingRight="98dp"
+            android:text="Assalamualaikum,
+            Selamat datang lagi!"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:layout_marginTop="218dp"
+            android:id="@+id/text_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_1"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="42dp"
+            android:paddingRight="68dp"
+            android:text="Kembali kepada hal baik adalah
+            suatu perubahan yang baik."
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/text_2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_2"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="37dp"
+            android:paddingRight="36dp"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="14dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/textemail"/>
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/textemail"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/input"
+            android:layout_marginTop="6dp"
+            android:hint="Contoh : fulan@gmail.com"
+            android:textColorHint="#8897AE"
+            android:inputType="text"
+            android:textSize="14dp"
+            android:id="@+id/input_1"
+            android:paddingStart="50dp"
+            android:paddingEnd="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_1"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="37dp"
+            android:paddingRight="36dp"
+            android:text="Password"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="14dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textpassword"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mail"
+            android:layout_marginLeft="51dp"
+            android:layout_marginRight="322dp"
+            android:layout_marginTop="417dp"/>
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="46dp"
+            android:hint="Minimal 8 Karakter"
+            android:layout_below="@+id/textpassword"
+            android:textColorHint="#8897AE"
+            android:textSize="14dp"
+            android:background="@drawable/input"
+            android:inputType="textPassword"
+            android:id="@+id/input_2"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="6dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="80dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:width="353dp"
+            android:backgroundTint="@color/bg_blue"
+            android:layout_marginTop="30dp"
+            android:text="Masuk"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/masuk"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/masuk"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="82dp"
+            android:paddingRight="82dp"
+            android:text="@string/text_with_bold"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textregister"/>
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
