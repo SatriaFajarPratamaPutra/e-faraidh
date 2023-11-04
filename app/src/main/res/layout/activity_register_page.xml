@@ -17,13 +17,13 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/sora"
             android:paddingLeft="42dp"
-            android:paddingRight="98dp"
+            android:paddingRight="125dp"
             android:text="Assalamualaikum,
-            Selamat datang lagi!"
+            Selamat datang!"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="24dp"
-            android:layout_marginTop="218dp"
+            android:layout_marginTop="134dp"
             android:id="@+id/text_1"/>
 
         <TextView
@@ -32,9 +32,9 @@
             android:layout_below="@+id/text_1"
             android:fontFamily="@font/sora"
             android:paddingLeft="42dp"
-            android:paddingRight="68dp"
-            android:text="Kembali kepada hal baik adalah
-            suatu perubahan yang baik."
+            android:paddingRight="75dp"
+            android:text="Perubahan yang besar, dimulai
+            dari langkah kecil."
             android:textColor="@color/white"
             android:textStyle="normal"
             android:textSize="18dp"
@@ -48,11 +48,41 @@
             android:fontFamily="@font/sora"
             android:paddingLeft="37dp"
             android:paddingRight="36dp"
-            android:text="Email"
+            android:text="Nama"
             android:textColor="@color/white"
             android:textStyle="normal"
             android:textSize="14dp"
             android:layout_marginTop="30dp"
+            android:id="@+id/textname"/>
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/textname"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/input"
+            android:layout_marginTop="7.5dp"
+            android:hint="Contoh : Fulan"
+            android:textColorHint="#8897AE"
+            android:inputType="text"
+            android:textSize="14dp"
+            android:id="@+id/input_1"
+            android:paddingStart="15dp"
+            android:paddingEnd="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_1"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="37dp"
+            android:paddingRight="36dp"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="14dp"
+            android:layout_marginTop="15dp"
             android:id="@+id/textemail"/>
 
         <EditText
@@ -67,14 +97,14 @@
             android:textColorHint="#8897AE"
             android:inputType="text"
             android:textSize="14dp"
-            android:id="@+id/input_1"
+            android:id="@+id/input_2"
             android:paddingStart="52dp"
             android:paddingEnd="80dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/input_1"
+            android:layout_below="@+id/input_2"
             android:fontFamily="@font/sora"
             android:paddingLeft="37dp"
             android:paddingRight="36dp"
@@ -112,7 +142,7 @@
             android:textSize="14dp"
             android:background="@drawable/input"
             android:inputType="textPassword"
-            android:id="@+id/input_2"
+            android:id="@+id/input_3"
             android:layout_marginLeft="37dp"
             android:layout_marginRight="36dp"
             android:layout_marginTop="7.5dp"
@@ -146,16 +176,73 @@
             android:layout_marginRight="51.25dp"
             android:layout_marginTop="23.38dp"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_3"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="37dp"
+            android:paddingRight="36dp"
+            android:text="Konfirmasi Password"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="14dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textkonfirmpass"/>
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="46dp"
+            android:hint="Minimal 8 Karakter"
+            android:layout_below="@+id/textkonfirmpass"
+            android:textColorHint="#8897AE"
+            android:textSize="14dp"
+            android:background="@drawable/input"
+            android:inputType="textPassword"
+            android:id="@+id/input_4"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="7.5dp"
+            android:paddingStart="52dp"
+            android:paddingEnd="80dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textkonfirmpass"
+            android:src="@drawable/icon2"
+            android:layout_marginLeft="51dp"
+            android:layout_marginRight="322dp"
+            android:layout_marginTop="23.38dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textkonfirmpass"
+            android:src="@drawable/line"
+            android:layout_marginLeft="79dp"
+            android:layout_marginRight="314dp"
+            android:layout_marginTop="23.38dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textkonfirmpass"
+            android:src="@drawable/eye"
+            android:layout_marginLeft="318.25dp"
+            android:layout_marginRight="51.25dp"
+            android:layout_marginTop="23.38dp"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/input_2"
+            android:layout_below="@id/input_4"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:width="353dp"
             android:backgroundTint="@color/bg_blue"
             android:layout_marginTop="30dp"
-            android:text="Masuk"
+            android:text="Daftarkan Akun"
             android:textSize="18dp"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -168,11 +255,12 @@
             android:fontFamily="@font/sora"
             android:paddingLeft="82dp"
             android:paddingRight="82dp"
-            android:text="@string/text_with_bold"
+            android:text="@string/text_with_bold2"
             android:textColor="@color/white"
             android:textSize="16dp"
             android:layout_marginTop="15dp"
             android:id="@+id/textregister"/>
 
-    </RelativeLayout>
+        </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
