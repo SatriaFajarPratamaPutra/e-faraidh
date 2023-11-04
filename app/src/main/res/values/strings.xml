@@ -3,6 +3,7 @@
     <string name="e_faraidh">E-Faraidh</string>
     <string name="versi_2_0">versi 2.0</string>
     <string name="pusing_meng">Pusing mengatur\npembagian warisan?</string>
-    <string name="text_with_bold">Belum punya akun? <b>Register</b></string>
-    <string name="text_with_bold2">Sudah punya akun? <b>Login</b></string>
+    <string name="text_with_bold">Belum punya akun? <a href=""><b>Register</b></a></string>
+    <string name="text_with_bold2">Sudah punya akun? <a href=""><b>Login</b></a></string>
+    <string name="lewati"><a href="">Lewati</a></string>
 </resources>

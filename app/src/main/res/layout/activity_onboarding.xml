@@ -8,29 +8,77 @@
     android:layout_height="match_parent"
     android:background="#8195F4"> <!-- Warna latar belakang untuk aktivitas onboarding -->
 
-    <!-- Gambar yang ditampilkan di tengah layar -->
-    <ImageView
-        android:id="@+id/imageView"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/boarding1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="52dp"
-        tools:ignore="ContentDescription,MissingConstraints,VisualLintBounds" />
+        android:layout_height="match_parent">
 
-    <!-- Teks menampilkan 'Pusing Mengatur Warisan' dengan gaya yang telah ditentukan -->
-    <TextView
-        android:id="@+id/pusing_meng"
-        android:layout_width="257dp"
-        android:layout_height="58dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:gravity="top"
-        android:lineSpacingExtra="-1sp"
-        android:text="@string/pusing_meng"
-        android:textAppearance="@style/pusing_meng"
-        tools:ignore="MissingConstraints,TextContrastCheck,TextSizeCheck"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="562dp" />
+        <!-- Gambar yang ditampilkan di tengah layar -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/boarding1"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="52dp"
+            tools:ignore="ContentDescription,MissingConstraints,VisualLintBounds" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="40dp"
+            android:paddingRight="100dp"
+            android:text="Pusing mengatur
+            pembagian warisan?"
+            android:textStyle="bold"
+            android:textColor="@color/bg_blue"
+            android:textSize="24dp"
+            android:layout_marginTop="516dp"
+            android:id="@+id/textonboard1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textonboard1"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="40dp"
+            android:paddingRight="58dp"
+            android:text="Tidak paham atau kurang paham
+            dengan ilmu waris?"
+            android:textStyle="normal"
+            android:textColor="@color/fontmateri"
+            android:textSize="18dp"
+            android:layout_marginTop="19dp"
+            android:id="@+id/textonboard2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textonboard2"
+            android:layout_marginLeft="31dp"
+            android:layout_marginRight="30dp"
+            android:width="353dp"
+            android:backgroundTint="@color/bg_blue"
+            android:layout_marginTop="41dp"
+            android:text="Selanjutnya"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/selanjutnya"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora"
+            android:paddingStart="184dp"
+            android:text="@string/lewati"
+            android:layout_below="@id/selanjutnya"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            android:textColor="@color/bg_blue"
+            android:layout_marginTop="19dp"/>
+
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

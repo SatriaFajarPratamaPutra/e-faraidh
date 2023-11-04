@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ellipse"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/bg1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:paddingLeft="20dp"
+                android:paddingRight="190dp"
+                android:text="Materi &amp; Video
+            Pembelajaran"
+                android:textColor="@color/fontmateri"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_marginTop="67dp"
+                android:id="@+id/text1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:paddingLeft="20dp"
+                android:paddingRight="50dp"
+                android:text="Pelajari ilmu faraidh lebih dalam."
+                android:textColor="#5E718D"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:layout_below="@id/text1"
+                android:layout_marginTop="15dp"
+                android:id="@+id/text2"/>
+
+            <!--Awal box1-->
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/box"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="30dp"
+                android:id="@+id/box1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:paddingLeft="47dp"
+                android:paddingRight="50dp"
+                android:text="Bab 1 Pendahuluan"
+                android:textColor="@color/fontmateri"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="61.08dp"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_marginLeft="339.14dp"
+                android:layout_marginRight="48.65dp"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="61.08dp"
+                android:id="@+id/next1"/>
+            <!--Akhir box1-->
+
+            <!--Awal box2-->
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/box"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/box1"
+                android:layout_marginTop="15dp"
+                android:id="@+id/box2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:paddingLeft="47dp"
+                android:paddingRight="50dp"
+                android:text="Bab 2 Warisan"
+                android:textColor="@color/fontmateri"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:layout_below="@id/box1"
+                android:layout_marginTop="46.08dp"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_marginLeft="339.14dp"
+                android:layout_marginRight="48.65dp"
+                android:layout_below="@id/box1"
+                android:layout_marginTop="46.08dp"
+                android:id="@+id/next2"/>
+            <!--Akhir box2-->
+
+            <!--Awal box3-->
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/box"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/box2"
+                android:layout_marginTop="15dp"
+                android:id="@+id/box3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:paddingLeft="47dp"
+                android:paddingRight="50dp"
+                android:text="Bab 3 Cabang yang Terkait Waris..."
+                android:textColor="@color/fontmateri"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:layout_below="@id/box2"
+                android:layout_marginTop="46.08dp"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_marginLeft="339.14dp"
+                android:layout_marginRight="48.65dp"
+                android:layout_below="@id/box2"
+                android:layout_marginTop="46.08dp"
+                android:id="@+id/next3"/>
+            <!--Akhir box3-->
+
+            <!--Awal box4-->
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/box"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/box3"
+                android:layout_marginTop="15dp"
+                android:id="@+id/box4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:paddingLeft="47dp"
+                android:paddingRight="50dp"
+                android:text="Bab 4 Penghalang Warisan"
+                android:textColor="@color/fontmateri"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:layout_below="@id/box3"
+                android:layout_marginTop="46.08dp"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_marginLeft="339.14dp"
+                android:layout_marginRight="48.65dp"
+                android:layout_below="@id/box3"
+                android:layout_marginTop="46.08dp"
+                android:id="@+id/next4"/>
+            <!--Akhir box4-->
+
+            <!--Awal box5-->
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/box"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/box4"
+                android:layout_marginTop="15dp"
+                android:id="@+id/box5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:paddingLeft="47dp"
+                android:paddingRight="50dp"
+                android:text="Bab 5 Cabang yang Terkait Peng..."
+                android:textColor="@color/fontmateri"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:layout_below="@id/box4"
+                android:layout_marginTop="46.08dp"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_marginLeft="339.14dp"
+                android:layout_marginRight="48.65dp"
+                android:layout_below="@id/box4"
+                android:layout_marginTop="46.08dp"
+                android:id="@+id/next5"/>
+            <!--Akhir box5-->
+
+            <!--Awal box6-->
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/box"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/box5"
+                android:layout_marginTop="15dp"
+                android:id="@+id/box6"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:paddingLeft="47dp"
+                android:paddingRight="50dp"
+                android:text="Bab 6 Pembagian Warisan"
+                android:textColor="@color/fontmateri"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:layout_below="@id/box5"
+                android:layout_marginTop="46.08dp"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_marginLeft="339.14dp"
+                android:layout_marginRight="48.65dp"
+                android:layout_below="@id/box5"
+                android:layout_marginTop="46.08dp"
+                android:id="@+id/next6"/>
+            <!--Akhir box6-->
+
+            <!--Awal box7-->
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/box"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/box6"
+                android:layout_marginTop="15dp"
+                android:id="@+id/box7"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:paddingLeft="47dp"
+                android:paddingRight="50dp"
+                android:text="Bab 7 Ahli Waris yang Mendapat..."
+                android:textColor="@color/fontmateri"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:layout_below="@id/box6"
+                android:layout_marginTop="46.08dp"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_marginLeft="339.14dp"
+                android:layout_marginRight="48.65dp"
+                android:layout_below="@id/box6"
+                android:layout_marginTop="46.08dp"
+                android:id="@+id/next7"/>
+            <!--Akhir box7-->
+
+            <!--Awal box8-->
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/box"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/box7"
+                android:layout_marginTop="15dp"
+                android:id="@+id/box8"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:paddingLeft="47dp"
+                android:paddingRight="50dp"
+                android:text="Bab 8 Kaidah tentang Warisan d..."
+                android:textColor="@color/fontmateri"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:layout_below="@id/box7"
+                android:layout_marginTop="46.08dp"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_marginLeft="339.14dp"
+                android:layout_marginRight="48.65dp"
+                android:layout_below="@id/box7"
+                android:layout_marginTop="46.08dp"
+                android:id="@+id/next8"/>
+            <!--Akhir box8-->
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
