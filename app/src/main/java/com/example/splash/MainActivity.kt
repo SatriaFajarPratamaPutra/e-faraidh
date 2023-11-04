@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         // Handler digunakan untuk menunda proses selama SPLASH_TIMEOUT (3000 milidetik atau 3 detik).
         Handler().postDelayed({
             // Setelah waktu SPLASH_TIMEOUT berlalu, buat Intent untuk memulai aktivitas berikutnya.
-            val intent = Intent(this, LoginPageActivity::class.java)
+            val intent = Intent(this, OnboardingActivity::class.java)
             startActivity(intent) // Memulai aktivitas OnboardingActivity.
             finish() // Menyelesaikan aktivitas splash screen agar tidak dapat diakses kembali setelah berpindah ke aktivitas berikutnya.
         }, SPLASH_TIMEOUT)
