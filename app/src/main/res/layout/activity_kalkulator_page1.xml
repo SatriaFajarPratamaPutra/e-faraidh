@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB">
+
+    <RelativeLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/headerkalkulator"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/header"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowback"
+            android:layout_marginTop="69dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="349dp"
+            android:id="@+id/arrowback"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="56dp"
+            android:paddingRight="90dp"
+            android:textColor="@color/fontmateri"
+            android:text="Informasi Umum Pewaris"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="73dp"
+            android:id="@+id/text1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="24dp"
+            android:paddingRight="200dp"
+            android:text="Jenis Kelamin Pewaris"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="140dp"
+            android:id="@+id/text2"
+            android:textColor="@color/fontmateri"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:text="Jenis kelamin pihak yang meninggalkan harta"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/text3"
+            android:textColor="@color/fontversi"/>
+
+        <RadioButton
+            android:id="@+id/rblakilaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="15.5dp"
+            android:layout_marginLeft="24dp"
+            android:text="Laki-laki" />
+
+        <RadioButton
+            android:id="@+id/rbperempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="48.5dp"
+            android:layout_marginLeft="24dp"
+            android:text="Perempuan" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbperempuan"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="24dp"
+            android:paddingRight="150dp"
+            android:text="Status Pernikahan Pewaris"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/text4"
+            android:textColor="@color/fontmateri"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbperempuan"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:text="Perkawinan legal yang diakui negara"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="46dp"
+            android:id="@+id/text5"
+            android:textColor="@color/fontversi"/>
+
+        <RadioButton
+            android:id="@+id/rblakilakii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text5"
+            android:layout_marginTop="15.5dp"
+            android:layout_marginLeft="24dp"
+            android:text="Sudah menikah" />
+
+        <RadioButton
+            android:id="@+id/rbperempuann"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text5"
+            android:layout_marginTop="48.5dp"
+            android:layout_marginLeft="24dp"
+            android:text="Belum menikah" />
+
+        <Button
+            android:id="@+id/selanjutnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sorasemibold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="715dp"
+            android:layout_marginRight="21dp"
+            android:width="352dp"
+            android:backgroundTint="@color/bg_blue"
+            android:text="Selanjutnya"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

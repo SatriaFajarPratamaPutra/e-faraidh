@@ -15,9 +15,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sora"
+            android:fontFamily="@font/sorabold"
             android:paddingLeft="42dp"
-            android:paddingRight="125dp"
+            android:paddingRight="120dp"
             android:text="Assalamualaikum,
             Selamat datang!"
             android:textColor="@color/white"
@@ -32,7 +32,6 @@
             android:layout_below="@+id/text_1"
             android:fontFamily="@font/sora"
             android:paddingLeft="42dp"
-            android:paddingRight="75dp"
             android:text="Perubahan yang besar, dimulai
             dari langkah kecil."
             android:textColor="@color/white"
@@ -236,6 +235,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/sorasemibold"
             android:layout_below="@id/input_4"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
@@ -246,7 +246,8 @@
             android:textSize="18dp"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:id="@+id/masuk"/>
+            android:id="@+id/masuk"
+            android:onClick="registerButton"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -255,11 +256,24 @@
             android:fontFamily="@font/sora"
             android:paddingLeft="82dp"
             android:paddingRight="82dp"
-            android:text="@string/text_with_bold2"
+            android:text="Sudah punya akun?"
             android:textColor="@color/white"
             android:textSize="16dp"
             android:layout_marginTop="15dp"
             android:id="@+id/textregister"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/masuk"
+            android:fontFamily="@font/sorasemibold"
+            android:paddingLeft="240dp"
+            android:paddingRight="10dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textregister2"/>
 
         </RelativeLayout>
 

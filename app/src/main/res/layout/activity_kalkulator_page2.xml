@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB">
+
+    <RelativeLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/headerkalkulator"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/header"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowback"
+            android:layout_marginTop="69dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="349dp"
+            android:id="@+id/arrowback"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="56dp"
+            android:paddingRight="105dp"
+            android:text="Informasi Harta Pewaris"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="73dp"
+            android:id="@+id/text1"
+            android:textColor="@color/fontmateri"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="24dp"
+            android:paddingRight="100dp"
+            android:text="Jenis Harta Peninggalan Pewaris"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="140dp"
+            android:id="@+id/text2"
+            android:textColor="@color/fontmateri"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:text="Pilih aset yang sesuai dengan keadaan pewaris"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/text3"
+            android:textColor="@color/fontversi"/>
+
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="15.5dp"
+            android:layout_marginLeft="24dp"
+            android:text="Rumah" />
+
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="48.5dp"
+            android:layout_marginLeft="24dp"
+            android:text="Tanah" />
+
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="81.5dp"
+            android:layout_marginLeft="24dp"
+            android:text="Perhiasan" />
+
+        <CheckBox
+            android:id="@+id/cb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="114.5dp"
+            android:layout_marginLeft="24dp"
+            android:text="Uang/Tabungan" />
+
+        <CheckBox
+            android:id="@+id/cb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="147.5dp"
+            android:layout_marginLeft="24dp"
+            android:text="Saham" />
+
+        <CheckBox
+            android:id="@+id/cb6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="180.5dp"
+            android:layout_marginLeft="24dp"
+            android:text="Perusahaan" />
+
+        <CheckBox
+            android:id="@+id/cb7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="213.5dp"
+            android:layout_marginLeft="24dp"
+            android:text="Kendaraan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cb7"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="24dp"
+            android:paddingRight="100dp"
+            android:text="Perkiraan Total Peninggalan Warisan"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/text4"
+            android:textColor="@color/fontmateri"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cb7"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:text="Harta yang akan dibagikan oleh pewaris"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="46dp"
+            android:id="@+id/text5"
+            android:textColor="@color/fontversi"/>
+
+        <EditText
+            android:layout_width="345dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/text5"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/input2"
+            android:layout_marginTop="15.5dp"
+            android:hint="Rp."
+            android:textColorHint="#8897AE"
+            android:inputType="text"
+            android:textSize="14dp"
+            android:id="@+id/input_1"
+            android:paddingStart="15dp"
+            android:paddingEnd="80dp"/>
+
+        <Button
+            android:id="@+id/selanjutnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="715dp"
+            android:layout_marginRight="21dp"
+            android:width="352dp"
+            android:backgroundTint="@color/bg_blue"
+            android:text="Selanjutnya"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:fontFamily="@font/sorasemibold"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

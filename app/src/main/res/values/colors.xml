@@ -4,4 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bg_blue">#4361EE</color>
     <color name="fontmateri">#1C222B</color>
+    <color name="fontversi">#8897AE</color>
+    <color name="fontsubbab">#5E718D</color>
+    <color name="fontsubbabmateri">#455468</color>
+    <color name="fonttahunmateri">#AFBACA</color>
+    <color name="fontradiobutton">#2D3643</color>
 </resources>

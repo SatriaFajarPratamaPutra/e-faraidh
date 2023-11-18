@@ -11,67 +11,70 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/ob1"
+        android:background="@drawable/ob2"
         android:clipToOutline="true"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="201dp">
 
-        <TextView
-            android:id="@+id/textonboard1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="500dp"
-            android:fontFamily="@font/sorabold"
-            android:paddingLeft="29dp"
-            android:paddingRight="107dp"
-            android:text="Pusing mengatur
-            pembagian warisan?"
-            android:textColor="@color/bg_blue"
-            android:textSize="24dp"
-            android:textStyle="bold" />
+        <!-- Gambar yang ditampilkan di tengah layar -->
 
         <TextView
-            android:id="@+id/textonboard2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="42dp"
+            android:paddingRight="120dp"
+            android:text="Bingung mencari
+penasehat waris?"
+            android:textColor="@color/bg_blue"
+            android:textSize="24dp"
+            android:layout_marginTop="500dp"
+            android:id="@+id/textonboard1"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textonboard1"
-            android:layout_marginTop="19dp"
             android:fontFamily="@font/sora"
-            android:paddingLeft="29dp"
-            android:paddingRight="68dp"
-            android:text="Tidak paham atau kurang paham
-            dengan ilmu waris?"
+            android:paddingLeft="42dp"
+            android:paddingRight="70dp"
+            android:text="Ragu dengan hasil pembagian
+            dan ingin berkonsultasi?"
+            android:textStyle="normal"
             android:textColor="@color/fontmateri"
             android:textSize="18dp"
-            android:textStyle="normal" />
+            android:layout_marginTop="19dp"
+            android:id="@+id/textonboard2"/>
 
         <Button
-            android:id="@+id/selanjutnya"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/sorasemibold"
             android:layout_below="@id/textonboard2"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="41dp"
             android:layout_marginRight="20dp"
             android:width="353dp"
             android:backgroundTint="@color/bg_blue"
+            android:layout_marginTop="41dp"
             android:text="Selanjutnya"
+            android:textSize="18dp"
             android:textColor="@color/white"
-            android:textSize="18dp" />
+            android:textStyle="bold"
+            android:id="@+id/selanjutnya"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/selanjutnya"
-            android:layout_marginLeft="173dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="170dp"
             android:fontFamily="@font/sora"
+            android:layout_marginLeft="173dp"
+            android:layout_marginRight="170dp"
             android:text="@string/lewati"
-            android:textColor="@color/bg_blue"
+            android:layout_below="@id/selanjutnya"
             android:textSize="14dp"
             android:textStyle="normal"
+            android:textColor="@color/bg_blue"
+            android:layout_marginTop="16dp"
             android:id="@+id/idlewati"/>
 
 

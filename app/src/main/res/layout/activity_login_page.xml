@@ -15,9 +15,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sora"
+            android:fontFamily="@font/sorabold"
             android:paddingLeft="42dp"
-            android:paddingRight="98dp"
+            android:paddingRight="90dp"
             android:text="Assalamualaikum,
             Selamat datang lagi!"
             android:textColor="@color/white"
@@ -32,11 +32,9 @@
             android:layout_below="@+id/text_1"
             android:fontFamily="@font/sora"
             android:paddingLeft="42dp"
-            android:paddingRight="68dp"
-            android:text="Kembali kepada hal baik adalah
-            suatu perubahan yang baik."
+            android:paddingRight="50dp"
+            android:text="Kembali kepada hal baik adalah suatu perubahan yang baik."
             android:textColor="@color/white"
-            android:textStyle="normal"
             android:textSize="18dp"
             android:layout_marginTop="16dp"
             android:id="@+id/text_2"/>
@@ -149,6 +147,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/sorasemibold"
             android:layout_below="@id/input_2"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
@@ -159,7 +158,8 @@
             android:textSize="18dp"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:id="@+id/masuk"/>
+            android:id="@+id/masuk"
+            android:onClick="loginButton"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -168,11 +168,24 @@
             android:fontFamily="@font/sora"
             android:paddingLeft="82dp"
             android:paddingRight="82dp"
-            android:text="@string/text_with_bold"
+            android:text="Belum punya akun?"
             android:textColor="@color/white"
             android:textSize="16dp"
             android:layout_marginTop="15dp"
-            android:id="@+id/textregister"/>
+            android:id="@+id/textlogin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/masuk"
+            android:fontFamily="@font/sorasemibold"
+            android:paddingLeft="240dp"
+            android:paddingRight="10dp"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textlogin2"/>
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

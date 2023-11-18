@@ -23,32 +23,40 @@
                 android:layout_alignParentRight="true"
                 android:id="@+id/bg1"/>
 
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrowback"
+                android:layout_marginTop="69dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="349dp"
+                android:id="@+id/arrowback"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/sora"
-                android:paddingLeft="20dp"
-                android:paddingRight="190dp"
-                android:text="Materi &amp; Video
-            Pembelajaran"
+                android:fontFamily="@font/sorabold"
+                android:paddingLeft="56dp"
+                android:paddingRight="50dp"
+                android:text="Materi &amp; Video Pembelajaran"
                 android:textColor="@color/fontmateri"
                 android:textStyle="bold"
-                android:textSize="24dp"
-                android:layout_marginTop="67dp"
+                android:textSize="18dp"
+                android:layout_marginTop="70dp"
                 android:id="@+id/text1"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sora"
-                android:paddingLeft="20dp"
+                android:paddingLeft="56dp"
                 android:paddingRight="50dp"
                 android:text="Pelajari ilmu faraidh lebih dalam."
                 android:textColor="#5E718D"
                 android:textStyle="normal"
-                android:textSize="16dp"
+                android:textSize="14dp"
                 android:layout_below="@id/text1"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="3dp"
                 android:id="@+id/text2"/>
 
             <!--Awal box1-->
@@ -336,6 +344,7 @@
                 android:layout_marginRight="48.65dp"
                 android:layout_below="@id/box7"
                 android:layout_marginTop="46.08dp"
+                android:layout_marginBottom="49dp"
                 android:id="@+id/next8"/>
             <!--Akhir box8-->
 

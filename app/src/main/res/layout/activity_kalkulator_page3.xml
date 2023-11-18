@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB">
+
+    <RelativeLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/headerkalkulator"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/header"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowback"
+            android:layout_marginTop="69dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="349dp"
+            android:id="@+id/arrowback"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="56dp"
+            android:paddingRight="50dp"
+            android:text="Informasi Keluarga Pewaris"
+            android:textStyle="bold"
+            android:textColor="@color/fontmateri"
+            android:textSize="18dp"
+            android:layout_marginTop="73dp"
+            android:id="@+id/text1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="24dp"
+            android:paddingRight="100dp"
+            android:text="Apakah pasangan sah masih hidup?"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="140dp"
+            android:id="@+id/text2"
+            android:textColor="@color/fontmateri"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:text="Hanya untuk pasangan suami-istri yang sah"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/text3"
+            android:textColor="@color/fontversi"/>
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="24dp"
+            android:text="Ya" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="41dp"
+            android:layout_marginLeft="24dp"
+            android:text="Tidak" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb2"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="24dp"
+            android:paddingRight="50dp"
+            android:text="Apakah pewaris dan pasangan telah cerai?"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text4"
+            android:textColor="@color/fontmateri"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb2"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:text="Hanya untuk pasangan suami-istri yang sah"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="32dp"
+            android:id="@+id/text5"
+            android:textColor="@color/fontversi"/>
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text5"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="24dp"
+            android:text="Ya" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text5"
+            android:layout_marginTop="41dp"
+            android:layout_marginLeft="24dp"
+            android:text="Tidak" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb4"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="24dp"
+            android:paddingRight="125dp"
+            android:text="Apakah pewaris memiliki anak?"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text6"
+            android:textColor="@color/fontmateri"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb4"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:text="Diluar pernikahan sah tidak terhitung"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="32dp"
+            android:id="@+id/text7"
+            android:textColor="@color/fontversi"/>
+
+        <RadioButton
+            android:id="@+id/rb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text7"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="24dp"
+            android:text="Ya" />
+
+        <RadioButton
+            android:id="@+id/rb6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text7"
+            android:layout_marginTop="41dp"
+            android:layout_marginLeft="24dp"
+            android:text="Tidak" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb6"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="24dp"
+            android:paddingRight="25dp"
+            android:text="Apakah pewaris memiliki cucu dari anak laki?"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text8"
+            android:textColor="@color/fontmateri"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb6"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:text="Hanya untuk cucu dari laki-laki"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="32dp"
+            android:id="@+id/text9"
+            android:textColor="@color/fontversi"/>
+
+        <RadioButton
+            android:id="@+id/rb7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text9"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="24dp"
+            android:text="Ya" />
+
+        <RadioButton
+            android:id="@+id/rb8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text9"
+            android:layout_marginTop="41dp"
+            android:layout_marginLeft="24dp"
+            android:text="Tidak" />
+
+        <Button
+            android:id="@+id/selanjutnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="715dp"
+            android:layout_marginRight="21dp"
+            android:width="352dp"
+            android:backgroundTint="@color/bg_blue"
+            android:text="Selanjutnya"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:fontFamily="@font/sorasemibold"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

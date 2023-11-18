@@ -11,68 +11,85 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/ob1"
+        android:background="@drawable/ob3"
         android:clipToOutline="true"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="201dp">
 
-        <TextView
-            android:id="@+id/textonboard1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="500dp"
-            android:fontFamily="@font/sorabold"
-            android:paddingLeft="29dp"
-            android:paddingRight="107dp"
-            android:text="Pusing mengatur
-            pembagian warisan?"
-            android:textColor="@color/bg_blue"
-            android:textSize="24dp"
-            android:textStyle="bold" />
+        <!-- Gambar yang ditampilkan di tengah layar -->
 
         <TextView
-            android:id="@+id/textonboard2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="42dp"
+            android:paddingRight="59dp"
+            android:text="E-Faraidh hadir sebagai
+solusi Anda."
+            android:textStyle="bold"
+            android:textColor="@color/bg_blue"
+            android:textSize="24dp"
+            android:layout_marginTop="500dp"
+            android:id="@+id/textonboard1"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textonboard1"
-            android:layout_marginTop="19dp"
             android:fontFamily="@font/sora"
-            android:paddingLeft="29dp"
-            android:paddingRight="68dp"
-            android:text="Tidak paham atau kurang paham
-            dengan ilmu waris?"
+            android:paddingLeft="42dp"
+            android:paddingRight="50dp"
+            android:text="Kalkulator hitung waris dan chat
+dengan pakar ahli hanya disini"
+            android:textStyle="normal"
             android:textColor="@color/fontmateri"
             android:textSize="18dp"
-            android:textStyle="normal" />
+            android:layout_marginTop="20dp"
+            android:id="@+id/textonboard2"/>
 
         <Button
-            android:id="@+id/selanjutnya"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="353dp"
+            android:layout_height="50dp"
             android:fontFamily="@font/sorasemibold"
             android:layout_below="@id/textonboard2"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="41dp"
             android:layout_marginRight="20dp"
-            android:width="353dp"
             android:backgroundTint="@color/bg_blue"
-            android:text="Selanjutnya"
+            android:layout_marginTop="17dp"
+            android:text="Masuk dengan Akun yang Ada"
+            android:textSize="19dp"
             android:textColor="@color/white"
-            android:textSize="18dp" />
+            android:textStyle="bold"
+            android:id="@+id/selanjutnya"
+            />
+
+        <ImageButton
+            android:id="@+id/imgbutton"
+            android:layout_width="353dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/selanjutnya"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:width="200dp"
+            android:onClick="pindah2"
+            android:src="@drawable/button_stroke" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/selanjutnya"
-            android:layout_marginLeft="173dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="170dp"
             android:fontFamily="@font/sora"
-            android:text="@string/lewati"
+            android:paddingLeft="93dp"
+            android:paddingRight="9dp"
+            android:text="Buat Akun yang Baru"
             android:textColor="@color/bg_blue"
-            android:textSize="14dp"
-            android:textStyle="normal"
-            android:id="@+id/idlewati"/>
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/selanjutnya" />
+
+
+
+
 
 
     </RelativeLayout>

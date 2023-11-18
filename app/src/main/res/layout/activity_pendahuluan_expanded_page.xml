@@ -38,17 +38,19 @@
                 android:src="@drawable/arrowback"
                 android:layout_marginTop="67dp"
                 android:layout_marginLeft="20dp"
+                android:id="@+id/arrowback"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/sora"
+                android:fontFamily="@font/sorabold"
                 android:paddingLeft="60dp"
-                android:paddingRight="211dp"
+                android:paddingRight="200dp"
                 android:text="Pendahuluan"
                 android:textStyle="bold"
                 android:textSize="18dp"
+                android:textColor="@color/fontmateri"
                 android:layout_marginTop="70dp"
                 android:id="@+id/text1"/>
 
@@ -114,23 +116,20 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="353dp"
-
-                />
+                android:id="@+id/arrownext"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/materi"
-                android:layout_marginRight="45dp"
+                android:layout_marginRight="40dp"
                 android:layout_marginTop="22.5dp"
                 android:layout_marginLeft="311dp"
                 android:text="Bab 1"
-                android:fontFamily="@font/sora"
+                android:fontFamily="@font/sorabold"
                 android:textStyle="bold"
                 android:textColor="#8897AE"
-                android:textSize="14dp"
-
-                />
+                android:textSize="14dp" />
 
 
 
