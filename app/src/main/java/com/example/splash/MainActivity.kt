@@ -1,5 +1,4 @@
 package com.example.splash
-
 import android.os.Handler
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
