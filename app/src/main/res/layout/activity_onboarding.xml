@@ -20,7 +20,7 @@
             android:id="@+id/textonboard1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="500dp"
+            android:layout_marginTop="550dp"
             android:fontFamily="@font/sorabold"
             android:paddingLeft="29dp"
             android:paddingRight="107dp"
@@ -29,6 +29,21 @@
             android:textColor="@color/bg_blue"
             android:textSize="24dp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/selanjutnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textonboard2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginRight="20dp"
+            android:width="353dp"
+            android:backgroundTint="@color/bg_blue"
+            android:fontFamily="@font/sorasemibold"
+            android:text="Selanjutnya"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/textonboard2"
@@ -40,25 +55,10 @@
             android:paddingLeft="29dp"
             android:paddingRight="68dp"
             android:text="Tidak paham atau kurang paham
-            dengan ilmu waris?"
+dengan ilmu waris?"
             android:textColor="@color/fontmateri"
             android:textSize="18dp"
             android:textStyle="normal" />
-
-        <Button
-            android:id="@+id/selanjutnya"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/sorasemibold"
-            android:layout_below="@id/textonboard2"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="41dp"
-            android:layout_marginRight="20dp"
-            android:width="353dp"
-            android:backgroundTint="@color/bg_blue"
-            android:text="Selanjutnya"
-            android:textColor="@color/white"
-            android:textSize="18dp" />
 
         <TextView
             android:layout_width="wrap_content"

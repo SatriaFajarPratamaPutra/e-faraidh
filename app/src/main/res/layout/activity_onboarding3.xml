@@ -29,7 +29,7 @@ solusi Anda."
             android:textStyle="bold"
             android:textColor="@color/bg_blue"
             android:textSize="24dp"
-            android:layout_marginTop="500dp"
+            android:layout_marginTop="550dp"
             android:id="@+id/textonboard1"/>
 
         <TextView
