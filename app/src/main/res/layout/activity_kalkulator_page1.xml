@@ -10,142 +10,154 @@
         android:id="@+id/bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="91dp">
 
         <ImageView
+            android:id="@+id/header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/headerkalkulator"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentLeft="true"
-            android:id="@+id/header"/>
+            android:src="@drawable/headerkalkulator" />
 
         <ImageButton
+            android:id="@+id/arrowback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/arrowback"
-            android:layout_marginTop="69dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="69dp"
             android:layout_marginRight="349dp"
-            android:id="@+id/arrowback"/>
+            android:src="@drawable/arrowback" />
 
         <TextView
+            android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="73dp"
             android:fontFamily="@font/sorabold"
             android:paddingLeft="56dp"
             android:paddingRight="90dp"
-            android:textColor="@color/fontmateri"
             android:text="Informasi Umum Pewaris"
-            android:textStyle="bold"
-            android:textSize="18dp"
-            android:layout_marginTop="73dp"
-            android:id="@+id/text1"/>
+            android:textColor="@color/fontmateri"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
             android:fontFamily="@font/sorabold"
             android:paddingLeft="24dp"
-            android:paddingRight="200dp"
+            android:paddingRight="24dp"
             android:text="Jenis Kelamin Pewaris"
-            android:textStyle="bold"
-            android:textSize="14dp"
-            android:layout_marginTop="140dp"
-            android:id="@+id/text2"
-            android:textColor="@color/fontmateri"/>
+            android:textColor="@color/fontmateri"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/text3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/text2"
+            android:layout_marginTop="1dp"
             android:fontFamily="@font/sora"
             android:paddingLeft="24dp"
             android:paddingRight="10dp"
             android:text="Jenis kelamin pihak yang meninggalkan harta"
-            android:textStyle="bold"
-            android:textSize="14dp"
-            android:layout_marginTop="1dp"
-            android:id="@+id/text3"
-            android:textColor="@color/fontversi"/>
+            android:textColor="@color/fontversi"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/rblakilaki"
+        <RadioGroup
+            android:id="@+id/rg_jeniskelaminpewaris"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/text3"
-            android:layout_marginTop="15.5dp"
-            android:layout_marginLeft="24dp"
-            android:text="Laki-laki" />
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="24dp">
 
-        <RadioButton
-            android:id="@+id/rbperempuan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text3"
-            android:layout_marginTop="48.5dp"
-            android:layout_marginLeft="24dp"
-            android:text="Perempuan" />
+
+            <RadioButton
+                android:id="@+id/rblakilaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Laki-laki" />
+
+            <RadioButton
+                android:id="@+id/rbperempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Perempuan" />
+        </RadioGroup>
 
 
         <TextView
+            android:id="@+id/text4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/rbperempuan"
+            android:layout_below="@id/rg_jeniskelaminpewaris"
+            android:layout_marginTop="24dp"
             android:fontFamily="@font/sorabold"
             android:paddingLeft="24dp"
-            android:paddingRight="150dp"
+            android:paddingRight="24dp"
             android:text="Status Pernikahan Pewaris"
-            android:textStyle="bold"
-            android:textSize="14dp"
-            android:layout_marginTop="24dp"
-            android:id="@+id/text4"
-            android:textColor="@color/fontmateri"/>
+            android:textColor="@color/fontmateri"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/text5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/rbperempuan"
+            android:layout_below="@id/rg_jeniskelaminpewaris"
+            android:layout_marginTop="46dp"
             android:fontFamily="@font/sora"
             android:paddingLeft="24dp"
             android:paddingRight="10dp"
             android:text="Perkawinan legal yang diakui negara"
-            android:textStyle="bold"
-            android:textSize="14dp"
-            android:layout_marginTop="46dp"
-            android:id="@+id/text5"
-            android:textColor="@color/fontversi"/>
+            android:textColor="@color/fontversi"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/rblakilakii"
+        <RadioGroup
+            android:id="@+id/rg_statuspernikahanpewaris"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/text5"
-            android:layout_marginTop="15.5dp"
-            android:layout_marginLeft="24dp"
-            android:text="Sudah menikah" />
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="24dp">
 
-        <RadioButton
-            android:id="@+id/rbperempuann"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text5"
-            android:layout_marginTop="48.5dp"
-            android:layout_marginLeft="24dp"
-            android:text="Belum menikah" />
+
+            <RadioButton
+                android:id="@+id/rb_sudahmenikah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah menikah" />
+
+            <RadioButton
+                android:id="@+id/rb_belummenikah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum menikah" />
+        </RadioGroup>
 
         <Button
             android:id="@+id/selanjutnya"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sorasemibold"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="715dp"
             android:layout_marginRight="21dp"
             android:width="352dp"
             android:backgroundTint="@color/bg_blue"
+            android:fontFamily="@font/sorasemibold"
             android:text="Selanjutnya"
             android:textColor="@color/white"
             android:textSize="18dp"
