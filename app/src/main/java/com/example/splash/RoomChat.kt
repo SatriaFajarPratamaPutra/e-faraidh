@@ -3,6 +3,9 @@ package com.example.splash
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.MotionEvent
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
@@ -20,5 +23,21 @@ class RoomChat : AppCompatActivity() {
             finish()
         }
 
+        setTouchListener()
+    }
+
+    private fun setTouchListener() {
+        val view = findViewById<View>(android.R.id.content)
+        view.setOnTouchListener { v, event ->
+            if (event.action == MotionEvent.ACTION_DOWN) {
+                hideKeyboard()
+            }
+            false
+        }
+    }
+
+    private fun hideKeyboard() {
+        val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
     }
 }

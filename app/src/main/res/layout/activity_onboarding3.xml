@@ -73,6 +73,7 @@ dengan pakar ahli hanya disini"
             android:layout_marginRight="20dp"
             android:width="200dp"
             android:onClick="pindah2"
+            android:background="@android:color/transparent"
             android:src="@drawable/button_stroke" />
 
         <TextView

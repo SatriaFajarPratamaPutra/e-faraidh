@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ellipse"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/bg1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowback"
+            android:layout_marginTop="77dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="349dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/arrowback"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sorabold"
+            android:paddingLeft="56dp"
+            android:paddingRight="115dp"
+            android:text="Edit Profil"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="73dp"
+            android:textColor="@color/fontmateri"
+            android:id="@+id/text1"/>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="147dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/ppfulan2" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="37dp"
+            android:paddingRight="36dp"
+            android:text="Nama"
+            android:textSize="14dp"
+            android:layout_below="@+id/img1"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/fontmateri"
+            />
+
+        <EditText
+            android:id="@+id/input_1"
+            android:layout_width="345dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/input3"
+            android:hint="Fulan"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:paddingEnd="80dp"
+            android:layout_below="@id/text2"
+            android:textColorHint="@color/fontradiobutton"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="37dp"
+            android:paddingRight="36dp"
+            android:text="Nomor Telepon"
+            android:textSize="14dp"
+            android:layout_below="@+id/input_1"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/fontmateri"
+            />
+
+        <EditText
+            android:id="@+id/input_2"
+            android:layout_width="345dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/input3"
+            android:hint="-"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:paddingEnd="80dp"
+            android:layout_below="@id/text3"
+            android:textColorHint="@color/fontradiobutton"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora"
+            android:paddingLeft="37dp"
+            android:paddingRight="36dp"
+            android:text="Email"
+            android:textSize="14dp"
+            android:layout_below="@+id/input_2"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/fontmateri"
+            />
+
+        <EditText
+            android:id="@+id/input_3"
+            android:layout_width="345dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/input3"
+            android:hint="ahmad@gmail.com"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:paddingEnd="80dp"
+            android:layout_below="@id/text4"
+            android:textColorHint="@color/fontradiobutton"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/simpanperubahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="715dp"
+            android:layout_marginRight="21dp"
+            android:fontFamily="@font/sorasemibold"
+            android:width="352dp"
+            android:backgroundTint="@color/bg_blue"
+            android:text="Simpan Perubahan"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

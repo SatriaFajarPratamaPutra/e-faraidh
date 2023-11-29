@@ -2,9 +2,14 @@ package com.example.splash
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
+import android.view.MotionEvent
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +23,8 @@ class RegisterPageActivity : AppCompatActivity() {
     private lateinit var input_3: EditText
     private lateinit var input_4: EditText
     private lateinit var button_1: Button
+    private lateinit var imageButtonTogglePassword1: ImageButton
+    private lateinit var imageButtonTogglePassword2: ImageButton
 
     private lateinit var database: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +43,20 @@ class RegisterPageActivity : AppCompatActivity() {
         input_3 = findViewById(R.id.input_3)
         input_4 = findViewById(R.id.input_4)
         button_1 = findViewById(R.id.masuk)
+        imageButtonTogglePassword1 = findViewById(R.id.eye1)
+        imageButtonTogglePassword2 = findViewById(R.id.eye2)
+        val editTextPassword1 = findViewById<EditText>(R.id.input_3)
+        val editTextPassword2 = findViewById<EditText>(R.id.input_4)
+
+        // Tambahkan event listener untuk eye1 (imageButtonTogglePassword1)
+        imageButtonTogglePassword1.setOnClickListener {
+            togglePasswordVisibility(editTextPassword1, imageButtonTogglePassword1)
+        }
+
+        // Tambahkan event listener untuk eye2 (imageButtonTogglePassword2)
+        imageButtonTogglePassword2.setOnClickListener {
+            togglePasswordVisibility(editTextPassword2, imageButtonTogglePassword2)
+        }
 
         database = FirebaseDatabase.getInstance().getReferenceFromUrl("https://e-faraidh-64b88-default-rtdb.firebaseio.com/")
 
@@ -57,10 +78,42 @@ class RegisterPageActivity : AppCompatActivity() {
                 database.child(nama).child("konfirm password").setValue(password2)
                 Toast.makeText(applicationContext, "Register Berhasil", Toast.LENGTH_SHORT).show()
 
-                val intent = Intent(this, HomepageActivity::class.java)
+                val intent = Intent(this, LoginPageActivity::class.java)
                 startActivity(intent)
             }
         }
 
+
+        setTouchListener()
+    }
+
+    private fun togglePasswordVisibility(editTextPassword: EditText, imageButtonTogglePassword: ImageButton) {
+        // Ubah visibilitas teks di EditText
+        if (editTextPassword.transformationMethod == PasswordTransformationMethod.getInstance()) {
+            // Jika sekarang teks tersembunyi, tampilkan teks
+            editTextPassword.transformationMethod = HideReturnsTransformationMethod.getInstance()
+        } else {
+            // Jika sekarang teks terlihat, sembunyikan teks
+            editTextPassword.transformationMethod = PasswordTransformationMethod.getInstance()
+        }
+
+        // Set kursor ke posisi terakhir pada teks
+        editTextPassword.setSelection(editTextPassword.text.length)
+    }
+
+
+    private fun setTouchListener() {
+        val view = findViewById<View>(android.R.id.content)
+        view.setOnTouchListener { v, event ->
+            if (event.action == MotionEvent.ACTION_DOWN) {
+                hideKeyboard()
+            }
+            false
+        }
+    }
+
+    private fun hideKeyboard() {
+        val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
     }
 }

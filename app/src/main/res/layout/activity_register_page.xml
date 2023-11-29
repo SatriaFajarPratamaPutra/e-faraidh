@@ -31,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_1"
             android:fontFamily="@font/sora"
+            android:paddingRight="20dp"
             android:paddingLeft="42dp"
             android:text="Perubahan yang besar, dimulai
             dari langkah kecil."
@@ -166,13 +167,15 @@
             android:layout_marginRight="314dp"
             android:layout_marginTop="23.38dp"/>
 
-        <ImageView
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textpassword"
             android:src="@drawable/eye"
             android:layout_marginLeft="318.25dp"
             android:layout_marginRight="51.25dp"
+            android:id="@+id/eye1"
+            android:background="@android:color/transparent"
             android:layout_marginTop="23.38dp"/>
 
         <TextView
@@ -223,13 +226,15 @@
             android:layout_marginRight="314dp"
             android:layout_marginTop="23.38dp"/>
 
-        <ImageView
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textkonfirmpass"
             android:src="@drawable/eye"
             android:layout_marginLeft="318.25dp"
             android:layout_marginRight="51.25dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/eye2"
             android:layout_marginTop="23.38dp"/>
 
         <Button
