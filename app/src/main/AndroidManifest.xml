@@ -98,11 +98,11 @@
         <activity
             android:name=".Page4Kalkulator"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        </activity>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity
+            android:name=".Page5Kalkulator"
+            android:exported="true">
         </activity>
 
         <activity
