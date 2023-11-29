@@ -27,7 +27,7 @@ class Page3Kalkulator : AppCompatActivity() {
 
         button1 = findViewById(R.id.selanjutnya)
         button1.setOnClickListener {
-            val intent = Intent(this, WelcomePageKalkulator::class.java)
+            val intent = Intent(this, Page4Kalkulator::class.java)
             startActivity(intent)
             finish()
         }

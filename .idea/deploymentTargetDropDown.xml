@@ -7,11 +7,19 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
+<<<<<<<<< Temporary merge branch 1
             <value value="C:\Users\Rama\.android\avd\Pixel_6_Pro_API_34.avd" />
+=========
+            <value value="C:\Users\rzksu\.android\avd\Pixel_6a_API_34.avd" />
+>>>>>>>>> Temporary merge branch 2
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2023-11-28T09:20:09.203356800Z" />
+<<<<<<<<< Temporary merge branch 1
+    <timeTargetWasSelectedWithDropDown value="2023-11-24T13:40:05.007255500Z" />
+=========
+    <timeTargetWasSelectedWithDropDown value="2023-11-24T13:46:15.381788700Z" />
+>>>>>>>>> Temporary merge branch 2
   </component>
 </project>

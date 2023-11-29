@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,7 +13,6 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="-16dp">
-
 
         <ImageView
             android:id="@+id/header"
@@ -40,7 +40,7 @@
             android:fontFamily="@font/sorabold"
             android:paddingLeft="56dp"
             android:paddingRight="50dp"
-            android:text="Informasi Keluarga Inti Pewaris"
+            android:text="Informasi Keluarga Pewaris"
             android:textColor="@color/fontmateri"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -53,7 +53,7 @@
             android:fontFamily="@font/sorabold"
             android:paddingLeft="24dp"
             android:paddingRight="24dp"
-            android:text="Apakah pasangan sah masih hidup?"
+            android:text="Apakah orang tua pewaris masih hidup?"
             android:textColor="@color/fontmateri"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -67,13 +67,13 @@
             android:fontFamily="@font/sora"
             android:paddingLeft="24dp"
             android:paddingRight="10dp"
-            android:text="Hanya untuk pasangan suami-istri yang sah"
+            android:text="Pilih kondisi dari orang tua pewaris"
             android:textColor="@color/fontversi"
             android:textSize="12sp"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/rg_pasangansah"
+            android:id="@+id/rg_kondisiortu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/text3"
@@ -81,28 +81,40 @@
             android:layout_marginTop="15dp">
 
             <RadioButton
-                android:id="@+id/rb_pasangansah_ya"
+                android:id="@+id/rb_kondisiortu_hm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ya" />
+                android:text="Bapak hidup, ibu meninggal" />
 
             <RadioButton
-                android:id="@+id/rb_pasangansah_tidak"
+                android:id="@+id/rb_kondisiortu_mh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tidak" />
+                android:text="Bapak meninggal, ibu hidup" />
+
+            <RadioButton
+                android:id="@+id/rb_kondisiortu_mm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bapak dan ibu meninggal" />
+
+            <RadioButton
+                android:id="@+id/rb_kondisiortu_hh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bapak dan ibu masih hidup" />
         </RadioGroup>
 
         <TextView
             android:id="@+id/text4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/rg_pasangansah"
+            android:layout_below="@id/rg_kondisiortu"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/sorabold"
             android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="Apakah pewaris dan pasangan telah cerai?"
+            android:paddingRight="2dp"
+            android:text="Jumlah saudara dari pewaris yang masih hidup"
             android:textColor="@color/fontmateri"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -111,65 +123,71 @@
             android:id="@+id/text5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/rg_pasangansah"
+            android:layout_below="@id/rg_kondisiortu"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/sora"
             android:paddingLeft="24dp"
             android:paddingRight="10dp"
-            android:text="Hanya untuk pasangan suami-istri yang sah"
+            android:text="Dihitung hanya yang beragama Islam"
             android:textColor="@color/fontversi"
             android:textSize="12sp"
             android:textStyle="bold" />
-
-        <RadioGroup
-            android:id="@+id/rg_pasangancerai"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text5"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="15dp">
-
-            <RadioButton
-                android:id="@+id/rb_pasangancerai_ya"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Ya" />
-
-            <RadioButton
-                android:id="@+id/rb_pasangancerai_tidak"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Tidak" />
-        </RadioGroup>
-
 
         <TextView
             android:id="@+id/text6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/rg_pasangancerai"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/sorabold"
+            android:layout_below="@id/text5"
+            android:layout_marginTop="27dp"
+            android:fontFamily="@font/sora"
             android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="Jumlah anak dari pewaris"
-            android:textColor="@color/fontmateri"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:paddingRight="10dp"
+            android:text="Anak Laki-Laki" />
+
+        <EditText
+            android:id="@+id/jumlah_anak_laki"
+            android:layout_width="54dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/text5"
+            android:layout_toEndOf="@+id/text6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15.5dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/input2"
+            android:hint="0"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="#8897AE"
+            android:textSize="16sp"
+            />
 
         <TextView
             android:id="@+id/text7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/rg_pasangancerai"
-            android:layout_marginTop="32dp"
+            android:layout_below="@id/text6"
+            android:layout_marginTop="27dp"
             android:fontFamily="@font/sora"
             android:paddingLeft="24dp"
             android:paddingRight="10dp"
-            android:text="Apabila tidak memiliki dikosongi"
-            android:textColor="@color/fontversi"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+            android:text="Anak Perempuan"/>
+
+        <EditText
+            android:id="@+id/jumlah_anak_perempuan"
+            android:layout_width="54dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/text6"
+            android:layout_toEndOf="@+id/text7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15.5dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/input2"
+            android:hint="0"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="#8897AE"
+            android:textSize="16sp"
+            />
 
         <TextView
             android:id="@+id/text8"
@@ -177,149 +195,66 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/text7"
             android:layout_marginTop="27dp"
-            android:fontFamily="@font/sora"
-            android:paddingLeft="24dp"
-            android:paddingRight="10dp"
-            android:text="Anak Laki-Laki"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/jumlah_anak_laki"
-            android:layout_width="54dp"
-            android:layout_height="46dp"
-            android:layout_below="@+id/text7"
-            android:layout_toEndOf="@+id/text8"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15.5dp"
-            android:layout_marginRight="24dp"
-            android:background="@drawable/input2"
-            android:hint="0"
-            android:inputType="number"
-            android:textAlignment="center"
-            android:textColorHint="#8897AE"
-            android:textSize="16sp"
-            />
-
-        <TextView
-            android:id="@+id/text9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text8"
-            android:layout_marginTop="27dp"
-            android:fontFamily="@font/sora"
-            android:paddingLeft="24dp"
-            android:paddingRight="10dp"
-            android:text="Anak Perempuan"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/jumlah_anak_perempuan"
-            android:layout_width="54dp"
-            android:layout_height="46dp"
-            android:layout_below="@+id/text8"
-            android:layout_toEndOf="@+id/text9"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15.5dp"
-            android:layout_marginRight="24dp"
-            android:background="@drawable/input2"
-            android:hint="0"
-            android:inputType="number"
-            android:textAlignment="center"
-            android:textColorHint="#8897AE"
-            android:textSize="16sp"
-            />
-
-        <TextView
-            android:id="@+id/text10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text9"
-            android:layout_marginTop="10dp"
             android:fontFamily="@font/sorabold"
             android:paddingLeft="24dp"
             android:paddingRight="24dp"
-            android:text="Jumlah cucu dari pewaris"
+            android:text="Apakah kakek nenek pewaris masih hidup?"
             android:textColor="@color/fontmateri"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/text11"
+            android:id="@+id/text9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text9"
-            android:layout_marginTop="32dp"
+            android:layout_below="@id/text7"
+            android:layout_marginTop="49dp"
             android:fontFamily="@font/sora"
             android:paddingLeft="24dp"
             android:paddingRight="10dp"
-            android:text="Apabila tidak memiliki dikosongi"
+            android:text="Pilih kondisi dari kakek nenek pewaris"
             android:textColor="@color/fontversi"
             android:textSize="12sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/text12"
+        <RadioGroup
+            android:id="@+id/rg_kakeknenek"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text11"
-            android:layout_marginTop="27dp"
-            android:fontFamily="@font/sora"
-            android:paddingLeft="24dp"
-            android:paddingRight="10dp"
-            android:text="Cucu Laki-Laki"
-            android:textSize="16sp" />
+            android:layout_below="@id/text9"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="15dp">
 
-        <EditText
-            android:id="@+id/jumlah_cucu_laki"
-            android:layout_width="54dp"
-            android:layout_height="46dp"
-            android:layout_below="@+id/text11"
-            android:layout_toEndOf="@+id/text12"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15.5dp"
-            android:layout_marginRight="24dp"
-            android:background="@drawable/input2"
-            android:hint="0"
-            android:inputType="number"
-            android:textAlignment="center"
-            android:textColorHint="#8897AE"
-            android:textSize="16sp"
-            />
+            <RadioButton
+                android:id="@+id/rb_kakeknenek_hm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kakek hidup, ibu meninggal" />
 
-        <TextView
-            android:id="@+id/text13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text12"
-            android:layout_marginTop="27dp"
-            android:fontFamily="@font/sora"
-            android:paddingLeft="24dp"
-            android:paddingRight="10dp"
-            android:text="Cucu Perempuan"
-            android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/rb_kakeknenek_mh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kakek meninggal, ibu hidup" />
 
-        <EditText
-            android:id="@+id/jumlah_cucu_perempuan"
-            android:layout_width="54dp"
-            android:layout_height="46dp"
-            android:layout_below="@+id/text12"
-            android:layout_toEndOf="@+id/text13"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15.5dp"
-            android:layout_marginRight="24dp"
-            android:background="@drawable/input2"
-            android:hint="0"
-            android:inputType="number"
-            android:textAlignment="center"
-            android:textColorHint="#8897AE"
-            android:textSize="16sp"
-            />
+            <RadioButton
+                android:id="@+id/rb_kakeknenek_mm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kakek dan ibu meninggal" />
+
+            <RadioButton
+                android:id="@+id/rb_kakeknenek_hh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kakek dan ibu masih hidup" />
+        </RadioGroup>
 
         <Button
             android:id="@+id/selanjutnya"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/text13"
+            android:layout_below="@+id/rg_kakeknenek"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="45dp"
             android:layout_marginRight="21dp"

@@ -33,8 +33,7 @@
             android:fontFamily="@font/sora"
             android:paddingRight="20dp"
             android:paddingLeft="42dp"
-            android:text="Perubahan yang besar, dimulai
-            dari langkah kecil."
+            android:text="Perubahan yang besar, dimulai dari langkah kecil."
             android:textColor="@color/white"
             android:textStyle="normal"
             android:textSize="18dp"
