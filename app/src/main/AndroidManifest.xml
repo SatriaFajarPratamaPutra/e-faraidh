@@ -106,6 +106,11 @@
         </activity>
 
         <activity
+            android:name=".Page6Kalkulator"
+            android:exported="true">
+        </activity>
+
+        <activity
             android:name=".PageChat"
             android:exported="true">
         </activity>

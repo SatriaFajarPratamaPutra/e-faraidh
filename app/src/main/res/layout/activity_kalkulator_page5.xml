@@ -355,7 +355,7 @@
 
 
         <Button
-            android:id="@+id/selanjutnya"
+            android:id="@+id/btnselanjutnya"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text23"
