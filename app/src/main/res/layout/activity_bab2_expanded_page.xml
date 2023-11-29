@@ -12,323 +12,281 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="56dp">
 
             <ImageView
+                android:id="@+id/header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/headerbab1"
+                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentLeft="true"
-                android:id="@+id/header"/>
+                android:src="@drawable/headerbab1" />
 
             <ImageButton
+                android:id="@+id/arrowback1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/arrowback"
-                android:layout_marginTop="76dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginRight="345dp"
                 android:background="@android:color/transparent"
-                android:id="@+id/arrowback1"/>
+                android:src="@drawable/arrowback" />
 
             <TextView
+                android:id="@+id/text1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
                 android:fontFamily="@font/sorabold"
                 android:paddingLeft="54dp"
                 android:paddingRight="211dp"
                 android:text="Bab 2"
-                android:textStyle="bold"
-                android:textSize="18dp"
-                android:layout_marginTop="70dp"
                 android:textColor="@color/fontmateri"
-                android:id="@+id/text1"/>
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
                 android:fontFamily="@font/sora"
                 android:paddingLeft="54dp"
                 android:paddingRight="211dp"
                 android:text="Warisan"
-                android:textStyle="normal"
-                android:textSize="16dp"
-                android:layout_marginTop="95dp"
                 android:textColor="@color/fontsubbab"
-                android:id="@+id/text2"/>
+                android:textSize="16dp"
+                android:textStyle="normal" />
 
             <TextView
+                android:id="@+id/text3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text2"
-                android:textColor="@color/fontmateri"
+                android:layout_marginTop="18dp"
                 android:fontFamily="@font/sorabold"
                 android:paddingLeft="21.5dp"
                 android:paddingRight="21.5dp"
                 android:text="Video Terkait"
-                android:textStyle="bold"
+                android:textColor="@color/fontmateri"
                 android:textSize="16dp"
-                android:layout_marginTop="36dp"
-                android:id="@+id/text3"/>
+                android:textStyle="bold" />
 
             <ImageButton
+                android:id="@+id/imgmateri"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/videomateribab1"
-                android:layout_marginTop="15dp"
                 android:layout_below="@id/text3"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="20dp"
-                android:id="@+id/imgmateri" />
+                android:src="@drawable/videomateribab1" />
 
             <ImageView
+                android:id="@+id/materi1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/framemateri1"
                 android:layout_below="@id/imgmateri"
-                android:layout_marginTop="15dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="20dp"
-                android:id="@+id/materi1"/>
+                android:src="@drawable/framemateri1" />
 
             <TextView
+                android:id="@+id/text4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/materi1"
+                android:layout_marginTop="15dp"
                 android:fontFamily="@font/sorabold"
                 android:paddingLeft="21.5dp"
                 android:paddingRight="223.5dp"
                 android:textColor="@color/fontmateri"
-                android:text="Penjelasan Materi"
-                android:textStyle="bold"
-                android:textSize="16dp"
-                android:layout_marginTop="15dp"
-                android:id="@+id/text4"/>
+                android:textSize="16dp" />
 
             <ImageView
+                android:id="@+id/materi2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/framemateri2"
                 android:layout_below="@id/text4"
-                android:layout_marginTop="15dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="20dp"
-                android:id="@+id/materi2"/>
+                android:src="@drawable/framemateri2" />
 
             <ImageButton
+                android:id="@+id/arrownext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/arrownext"
                 android:layout_below="@id/materi2"
+                android:layout_marginLeft="363dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginLeft="353dp"
-                android:layout_marginBottom="25dp"
                 android:background="@android:color/transparent"
-                android:id="@+id/arrownext"/>
+                android:src="@drawable/arrownext" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/materi2"
-                android:layout_marginRight="40dp"
-                android:layout_marginTop="22.5dp"
                 android:layout_marginLeft="311dp"
-                android:text="Bab 3"
+                android:layout_marginTop="22.5dp"
+                android:layout_marginRight="40dp"
                 android:fontFamily="@font/sorabold"
-                android:textStyle="bold"
+                android:text="Bab 3"
                 android:textColor="#8897AE"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/arrowback2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/materi2"
+                android:layout_marginLeft="21.5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="251.5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/arrowback2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/materi2"
+                android:layout_marginLeft="55.5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="240.5dp"
+                android:fontFamily="@font/sorabold"
+                android:text="Bab 1"
+                android:textColor="#8897AE"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgmateri"
+                android:layout_marginTop="29dp"
+                android:fontFamily="@font/sora"
+                android:paddingLeft="37dp"
+                android:paddingRight="36dp"
+                android:text="@string/materi1"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:layout_marginTop="-60dp"
+                android:fontFamily="@font/sorabold"
+                android:paddingLeft="37dp"
+                android:paddingRight="36dp"
+                android:text="PEMBAHASAN"
+                android:textColor="@color/fontsubbabmateri"
                 android:textSize="14dp" />
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/arrowback2"
-                android:layout_below="@id/materi2"
-                android:layout_marginRight="251.5dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginLeft="21.5dp"
-                android:background="@android:color/transparent"
-                android:id="@+id/arrowback2"/>
-
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/materi2"
-                android:layout_marginRight="240.5dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="55.5dp"
-                android:text="Bab 1"
-                android:fontFamily="@font/sorabold"
-                android:textStyle="bold"
-                android:textColor="#8897AE"
-                android:textSize="14dp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/imgmateri"
-                android:text="@string/materi1"
-                android:fontFamily="@font/sora"
-                android:paddingLeft="37dp"
-                android:paddingRight="36dp"
-                android:textSize="14dp"
-                android:layout_marginTop="29dp"
-                android:id="@+id/text5"
-                android:textColor="@color/fontsubbabmateri"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/imgmateri"
-                android:text="1 tahun lalu"
-                android:fontFamily="@font/sora"
-                android:paddingLeft="223dp"
-                android:paddingRight="36dp"
-                android:textSize="14dp"
-                android:layout_marginTop="47dp"
-                android:id="@+id/text6"
-                android:textColor="@color/fonttahunmateri"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text4"
-                android:text="BATASAN"
-                android:fontFamily="@font/sorabold"
-                android:paddingLeft="37dp"
-                android:paddingRight="36dp"
-                android:textSize="14dp"
-                android:layout_marginTop="29dp"
-                android:id="@+id/text7"
-                android:textStyle="bold"
-                android:textColor="@color/fontsubbabmateri"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text4"
-                android:text="@string/materi2"
-                android:fontFamily="@font/sora"
-                android:paddingLeft="37dp"
-                android:paddingRight="36dp"
-                android:textSize="14dp"
-                android:layout_marginTop="50dp"
                 android:id="@+id/text8"
-                android:textColor="@color/fontsubbabmateri"
-                android:justificationMode="inter_word"
-                />
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/text8"
-                android:text="PEMBAHASAN"
-                android:fontFamily="@font/sorabold"
-                android:paddingLeft="37dp"
-                android:paddingRight="36dp"
-                android:textSize="14dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/text9"
-                android:textStyle="bold"
-                android:textColor="@color/fontsubbabmateri"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text8"
-                android:text="@string/materi3"
+                android:layout_below="@id/text4"
+                android:layout_marginTop="-20dp"
                 android:fontFamily="@font/sora"
+                android:justificationMode="inter_word"
                 android:paddingLeft="37dp"
                 android:paddingRight="36dp"
+                android:text="@string/materi2"
+                android:textColor="@color/fontsubbabmateri"
                 android:textSize="14dp"
-                android:layout_marginTop="31dp"
+                android:textStyle="bold" />
+
+
+            <TextView
                 android:id="@+id/text10"
-                android:textColor="@color/fontsubbabmateri"
-                android:justificationMode="inter_word"
-                />
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/text10"
-                android:text="HUKUM"
-                android:fontFamily="@font/sorabold"
-                android:paddingLeft="37dp"
-                android:paddingRight="36dp"
-                android:textSize="14dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/text11"
-                android:textStyle="bold"
-                android:textColor="@color/fontsubbabmateri"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text10"
-                android:text="@string/materi4"
+                android:layout_below="@id/text8"
                 android:fontFamily="@font/sora"
+                android:justificationMode="inter_word"
                 android:paddingLeft="37dp"
                 android:paddingRight="36dp"
-                android:textSize="14dp"
-                android:layout_marginTop="31dp"
-                android:id="@+id/text12"
+                android:text="@string/materi3"
                 android:textColor="@color/fontsubbabmateri"
-                android:justificationMode="inter_word"
-                />
+                android:textSize="14dp" />
 
             <TextView
+                android:id="@+id/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text10"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sora"
+                android:justificationMode="inter_word"
+                android:paddingLeft="37dp"
+                android:paddingRight="36dp"
+                android:text="@string/materi4"
+                android:textColor="@color/fontsubbabmateri"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/text13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text12"
-                android:text="HAK-HAK TERKAIT PENINGGALAN SI MAYIT"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/sorabold"
                 android:paddingLeft="37dp"
                 android:paddingRight="20dp"
-                android:textSize="14dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/text13"
-                android:textStyle="bold"
+                android:text="Syarat warisan ada tiga:"
                 android:textColor="@color/fontsubbabmateri"
-                />
+                android:textSize="14dp"
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/text14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text12"
-                android:text="@string/materi5"
+                android:layout_marginTop="31dp"
                 android:fontFamily="@font/sora"
+                android:justificationMode="inter_word"
                 android:paddingLeft="37dp"
                 android:paddingRight="36dp"
-                android:textSize="14dp"
-                android:layout_marginTop="31dp"
-                android:id="@+id/text14"
+                android:text="@string/materi5"
                 android:textColor="@color/fontsubbabmateri"
-                android:justificationMode="inter_word"
-                />
+                android:textSize="14dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text14"
-                android:text="@string/materi6"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sorabold"
+                android:paddingLeft="37dp"
+                android:paddingRight="20dp"
+                android:text="Sebab - sebab warisan ada tiga yaitu:"
+                android:textColor="@color/fontsubbabmateri"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="770dp"
                 android:fontFamily="@font/sora"
+                android:justificationMode="inter_word"
                 android:paddingLeft="37dp"
                 android:paddingRight="36dp"
-                android:textSize="14dp"
-                android:layout_marginTop="8dp"
-                android:id="@+id/text15"
+                android:text="@string/materi6"
                 android:textColor="@color/fontsubbabmateri"
-                android:justificationMode="inter_word"
-                />
+                android:textSize="14dp" />
         </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

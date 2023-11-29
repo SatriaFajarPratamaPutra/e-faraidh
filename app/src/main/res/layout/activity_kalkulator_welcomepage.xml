@@ -24,9 +24,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/arrowback"
-            android:layout_marginTop="69dp"
+            android:layout_marginTop="78dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="349dp"
+            android:background="@android:color/transparent"
             android:id="@+id/arrowback"/>
 
         <TextView
@@ -46,8 +47,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/historyicon"
-            android:layout_marginTop="69dp"
+            android:layout_marginTop="78dp"
             android:layout_marginLeft="348dp"
+            android:background="@android:color/transparent"
             android:layout_marginRight="21dp"/>
 
         <TextView
